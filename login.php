@@ -8,7 +8,7 @@ $result = mysqli_query($con, $sql_query);
 
 if ($result->num_rows > 0) {
 $row = mysqli_fetch_assoc($result);
-$name = $row["name"];
+$name = $row["username"];
 echo("Login complete. Welcome ".$name);
 } else {
   echo("Login failed");
