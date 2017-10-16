@@ -2,9 +2,9 @@
 $servername = "localhost";
 $sqlUser = "monitor";
 $password = "Edward03";
-$dbname = "info";
+$dbname = "todo";
 
-$con = mysqli_connect($servername, $username, $password, $dbname);
+$con = mysqli_connect($servername, $sqlUser, $password, $dbname);
 
 $username = $_POST["username"];
 $sql_query = "select * from info where username = '$username';";
