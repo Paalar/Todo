@@ -1,7 +1,7 @@
 <?php
 header('Refresh: 2;url=infopost.php');
 //Creating a connection to the local mysql server
-$mysqli = mysqli_connect("localhost", "monitor", "Edward03", "todo");
+$mysqli = mysqli_connect("localhost", "DBUSER", "DBPASS", "DATABASE");
 
 
 $name = $_POST["name"]; // name, user input
